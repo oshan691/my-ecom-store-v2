@@ -3,7 +3,7 @@
     fetch('products.json')
         .then(response => response.json())
         .then(products => {
-            const container = document.querySelector('#product-container');
+            const container = document.getElementById('product-container');
             container.innerHTML = products.map(product => `
                 <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 p-6">
                     <img src="${product.image}" class="w-full h-40 object-cover rounded-2xl mb-4">
