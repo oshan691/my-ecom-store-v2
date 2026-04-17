@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ai-tool-01",
+    "name": "AI Business Analyzer",
+    "price": "49.00",
+    "description": "Powerful AI tool for business insights.",
+    "image": "https://via.placeholder.com/300x200?text=AI+Tool",
+    "category": "SaaS"
+  },
+  {
+    "id": "solar-calc-02",
+    "name": "Solar ROI Dashboard",
+    "price": "25.00",
+    "description": "Calculate energy savings instantly.",
+    "image": "https://via.placeholder.com/300x200?text=Solar+Tool",
+    "category": "Energy"
+  }
+]
