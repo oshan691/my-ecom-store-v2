@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Digital Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.css" />
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-slate-50">
+
+    <nav class="sticky top-0 z-50 glass border-b border-gray-200 p-4 flex justify-between items-center">
+        <div class="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            O-Tech Studio
+        </div>
+        <button class="snipcart-checkout flex items-center bg-blue-600 text-white px-5 py-2 rounded-full shadow-lg hover:bg-blue-700 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            <span class="snipcart-items-count font-bold">0</span>
+        </button>
+    </nav>
+
+    <header class="py-16 px-6 text-center bg-white border-b border-gray-100">
+        <h1 class="text-4xl font-extrabold text-slate-900 mb-4">Premium Business Tools</h1>
+        <p class="text-slate-500 max-w-md mx-auto">Build, automate, and scale your business with our top-rated digital assets.</p>
+    </header>
+
+   <main id="product-container" class="max-w-6xl mx-auto p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+</main>
+
+    <footer class="text-center py-10 text-slate-400 text-sm">
+        &copy; 2026 O-Tech Global. All rights reserved.
+    </footer>
+
+    <script async src="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="ODFhMWZkZjctMGYyOC00MDlhLTk0OTYtM2ZkM2U1MzU0M2E4NjM4Nzk5Nzk4NDkyOTk2OTM1"></div>
+    <script src="script.js"></script>
+</body>
+</html>
