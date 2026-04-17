@@ -1,13 +1,13 @@
-<script>
-    // JSON ෆයිල් එකෙන් ඩේටා ගමු
-    fetch('products.json')
-        .then(response => response.json())
-        .then(products => {
-            const container = document.getElementById('product-container');
+// JSON ෆයිල් එකෙන් ඩේටා ගමු
+fetch('products.json')
+    .then(response => response.json())
+    .then(products => {
+        const container = document.getElementById('product-container');
+        if(container) {
             container.innerHTML = products.map(product => `
                 <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 p-6">
                     <img src="${product.image}" class="w-full h-40 object-cover rounded-2xl mb-4">
-                    <span class="text-xs font-bold text-blue-600 uppercase">${product.category}</span>
+                    <span class="text-xs font-bold text-blue-600 uppercase">${product.category || 'Tool'}</span>
                     <h2 class="text-xl font-bold text-slate-800">${product.name}</h2>
                     <p class="text-sm text-slate-500 mt-2">${product.description}</p>
                     <div class="mt-6 flex justify-between items-center">
@@ -22,5 +22,6 @@
                     </div>
                 </div>
             `).join('');
-        });
-</script>
+        }
+    })
+    .catch(err => console.error("Error loading JSON:", err));
