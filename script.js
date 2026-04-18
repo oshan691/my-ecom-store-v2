@@ -1,4 +1,4 @@
-fetch('products.json')
+fetch('products.json?v=' + new Date().getTime())
     .then(response => response.json())
     .then(products => {
         const container = document.getElementById('product-container');
